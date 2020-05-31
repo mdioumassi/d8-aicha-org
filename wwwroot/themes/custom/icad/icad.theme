@@ -1,0 +1,37 @@
+<?php
+
+function icad_preprocess_field(&$variables, $hook) {
+
+  $element = $variables['element'];
+
+  if ($element['#field_name'] == 'field_video' && $element['#bundle'] == 'lexi') {
+    unset($variables['items'][0]['content']['children']['#theme']);
+    unset($variables['items'][0]['content']['children']['#uri']);
+    $variables['items'][0]['content']['children']['#markup'] = 'Découvrir le collier Lexie';
+  }
+
+  if($element['#field_type'] == 'entity_reference_revisions') {
+    if (isset($variables['element'][0]['#paragraph'])) {
+      $delta = 0;
+      while (!empty($variables['element'][$delta])) {
+        $type = $variables['element'][$delta]['#paragraph']->getType();
+        $paragraphs_type_css = str_replace('_', '-', $type);
+        $variables['items'][$delta]['attributes']->addClass($paragraphs_type_css);
+        $delta++;
+      }
+    }
+  }
+}
+
+function icad_preprocess_paragraph(&$variables) {
+  //$type = $variables['paragraph']->getType();
+  if(isset($variables['paragraph']->field_anchor)) {
+    $anchor = $variables['paragraph']->field_anchor->uri;
+    $anchor = explode('#', $anchor);
+    $anchor = $anchor[1];
+    $variables['anchor'] = $anchor;
+  }
+  else {
+    $variables['anchor'] = 'paragraph-' . $variables['paragraph']->id();
+  }
+}

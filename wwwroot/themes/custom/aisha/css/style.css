@@ -1,0 +1,80 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+.container{
+  margin-right: auto;
+  width: 70%;
+}
+
+#footer {
+  background-color: #2C3E50;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.container-footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/*Search*/
+#edit-keys {
+  border: 1px solid blue;
+}
+
+/*Logo*/
+#logo-aisha{
+  margin-top: 9px;
+  border-radius: 100%;
+}
+
+/**/
+.bottom-marging{
+  margin-bottom: 26px;
+}
+.navbar-header .logo img {
+  border-radius: 50%;
+  width: 45px;
+}
+/*logo entete*/
+.logo_header{
+  width: 60%;
+  border-radius: 100%;
+  margin-left: 60px;
+}
+.aisha{
+  font-size: 25px;
+  margin-top: 62Px;
+  margin-left: 23px;
+  color: white;
+}
+
+.header-activite{
+  text-align: center;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-top: 1px solid #ecf0f1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main-container {
+  padding-top: 102px;
+}
+
+#top-container{
+padding: 5px;
+}

@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * @file
+ * Contains mod_aisha.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function mod_aisha_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mod_aisha module.
+    case 'help.page.mod_aisha':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Le module pour le site aisha') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mod_aisha_theme() {
+  return [
+    'mod_aisha' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function mod_aisha_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $user = \Drupal::currentUser();
+  $isAnonymous = \Drupal::currentUser()->getAccount()->isAnonymous();
+  $isAuthenticated = \Drupal::currentUser()->getAccount()->isAuthenticated();
+  $role = \Drupal::currentUser()->getAccount()->getRoles($exclude_locked_roles = false);
+
+  if ($form_id == "views_form_carousel_page_1") {
+    $form['actions']['examples_link'] = [
+      '#title' => t('Ajouter nouveau slide'),
+      '#type' => 'link',
+      '#url' => Url::fromUri('internal:/node/add/carousel'),
+      '#attributes' => [
+        'class' => ['btn', 'btn-aisha', 'btn-primary'],
+      ],
+    ];
+
+    $form['actions']['#attached']['library'][] = "aisha/global-styling";
+    $form['#validate'][] = "views_form_carousel_page_1_submit";
+    // kint($form['actions']['submit']);
+  }
+}
+
+function views_form_carousel_page_1_submit(&$form, FormStateInterface $form_state) {
+
+  $input = $form_state->getUserInput();
+  $weight = 0;
+  foreach ($input['draggableviews'] as $item) {
+    $node = Node::load($item['id']);
+    //set value for field
+    $node->field_weigth->value = $weight;
+    $node->save();
+    $weight++;
+  }
+}
+

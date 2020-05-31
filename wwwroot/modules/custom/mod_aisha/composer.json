@@ -1,0 +1,13 @@
+{
+    "name": "mod_aisha",
+    "type": "drupal-module",
+    "description": "Le module pour le site aisha",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/mod_aisha",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/mod_aisha",
+        "source": "http://cgit.drupalcode.org/mod_aisha",
+    },
+}
