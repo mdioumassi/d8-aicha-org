@@ -47,7 +47,7 @@
 .aisha{
   font-size: 25px;
   margin-top: 62Px;
-  margin-left: 23px;
+  margin-left: 10px;
   color: white;
 }
 
@@ -64,6 +64,7 @@ hr {
   border-top-style: none;
   border-top-width: 0px;
   border-top: 1px solid #ecf0f1;
+  margin: 0px;
 }
 .sticky {
   position: fixed;
@@ -72,7 +73,7 @@ hr {
 }
 
 .sticky + .main-container {
-  padding-top: 102px;
+  padding-top: 16px;
 }
 
 #top-container{
