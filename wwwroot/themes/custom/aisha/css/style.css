@@ -77,5 +77,8 @@ hr {
 }
 
 #top-container{
-padding: 5px;
+padding: 0px;
+}
+.galerie_block{
+  border: 1px solid red;
 }
