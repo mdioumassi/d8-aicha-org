@@ -53,6 +53,21 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
+<div id="top-container" style="background-color: #5b80a4;">
+  <div class="row">
+    <div class="col-sm-3">
+      <div id="logo" style="position: fixed; z-index: 1">
+        <img class="logo_header" src="http://www.asso-aisha.org/sites/default/files/inline-images/logo.jpeg">
+      </div>
+    </div>
+    <div class="col-sm-9" ></div>
+  </div>
+</div>
+
+  {% if page.banniere %}
+    {{ page.banniere }}
+  {% endif %}
+</div>
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
     {%
