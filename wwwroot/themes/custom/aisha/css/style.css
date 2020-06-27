@@ -40,10 +40,10 @@
 }
 /*logo entete*/
 .logo_header{
-  width: 77%;
+  width: 70%;
   border-radius: 100%;
   margin-left: 60px;
-  margin: 4%;
+  margin-top: 5%;
 }
 .aisha{
   font-size: 25px;
@@ -82,4 +82,14 @@ padding: 0px;
 }
 .galerie_block{
   border: 1px solid red;
+}
+
+/*size image block*/
+
+#block_image {
+  width: 271px;
+  height: 202px;
+}
+.w3-container{
+  padding: 0px !important;
 }
