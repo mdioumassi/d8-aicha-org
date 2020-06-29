@@ -85,7 +85,8 @@ padding: 0px;
 }
 
 /*size image block*/
-pi
+
+#block_image {
   width: 271px;
   height: 202px;
 }
