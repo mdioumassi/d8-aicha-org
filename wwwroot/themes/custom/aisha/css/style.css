@@ -93,3 +93,16 @@ padding: 0px;
 .w3-container{
   padding: 0px !important;
 }
+
+.actu-title{
+  height: 96px;
+}
+.actu-title h2{
+  font-size: 18px;
+}
+.date-pub-actu{
+  color: #ffffff;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
