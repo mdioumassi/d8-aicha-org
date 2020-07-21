@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a page wrapper.
+ *
+ * For consistent wrapping to {{ page }} render in all themes. The
+ * "data-off-canvas-main-canvas" attribute is required by the off-canvas dialog.
+ * This is used by the core/drupal.dialog.off_canvas library to select the
+ * "main canvas" page element as opposed to the "off canvas" which is the dialog
+ * itself. The "main canvas" element must be resized according to the width of
+ * the "off canvas" dialog so that no portion of the "main canvas" is obstructed
+ * by the off-canvas dialog. The off-canvas dialog can vary in width when opened
+ * and can be resized by the user. The "data-off-canvas-main-canvas" attribute
+ * cannot be removed without breaking the off-canvas dialog functionality.
+ *
+ * Available variables:
+ * - children: Contains the child elements of the page.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if children %}
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+{#    <div id="top-container" class="row" style="background-color: #5b80a4">#}
+{#      <div class="col-sm-3"><img class="logo_header" src="http://www.asso-aisha.org/sites/default/files/inline-images/logo.jpeg"> </div>#}
+{#      <div class="col-sm-6">#}
+{#        <div class="row">#}
+{#          <div class="col-sm-12">#}
+{#            <div class="aisha">#}
+{#              <h1 style="font-size: 25px">ASSOCIATION MERE ET ENFANT AU GUIDIMAKHA</h1>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#          <div class="col-sm-12"><hr style="margin: 0px"></div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#          <div class="col-sm-12">#}
+{#            <div class="header-activite">#}
+{#              <span>ENFANCE</span> - <span>MERE</span> - <span>SANTE</span> - <span>METIER ARTISANAL</span>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#      <div class="col-sm-3" style="border:1px solid red">&nbsp;</div>#}
+{#    </div>#}
+    {{ children }}
+  </div>
+{% endif %}

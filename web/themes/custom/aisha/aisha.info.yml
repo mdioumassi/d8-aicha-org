@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'AISHA'
+description: 'Theme AISHA.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  banniere: 'Entete carrousel'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+    - 'aisha/global-styling'
