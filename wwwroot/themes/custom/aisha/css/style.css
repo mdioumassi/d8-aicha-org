@@ -108,3 +108,11 @@ padding: 0px;
   top: 8px;
   right: 16px;
 }
+#btn-play span{
+  cursor: pointer;
+  font-size: 71px;
+  color: #fff;
+  position: relative;
+  left: 42%;
+  top: -151px;
+}

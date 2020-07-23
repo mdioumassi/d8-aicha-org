@@ -18,6 +18,7 @@ global-styling:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
     js/menu-top.js: {}
     js/fontawesome.js: {}
+    js/script.js: {}
 
   dependencies:
     - core/drupal
