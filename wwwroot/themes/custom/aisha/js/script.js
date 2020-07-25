@@ -1,10 +1,15 @@
 (function($, D){
   $(document).ready(function(){
-   // $("body").addClass("w3-pale-green");
 
+   // $("body").addClass("w3-pale-green");
+    var href = $("#btn-play a").attr('href');
+
+    $("#btn-play a").attr('href').each(function(){
+    //  alert($(this));
+    });
     $("#btn-play span").click(function () {
-      var href = $("#btn-play a").attr('href');
-      window.location.href = href;
+
+     // window.location.href = href;
     });
   });
 })(jQuery, Drupal);

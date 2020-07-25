@@ -116,3 +116,7 @@ padding: 0px;
   left: 42%;
   top: -151px;
 }
+
+.banniere img{
+  cursor: none;
+}
