@@ -6,3 +6,6 @@
  *
  * Place your custom PHP code in this file.
  */
+function aisha_preprocess_menu__account(&$variables) {
+  $variables['account_name'] = Drupal::currentUser()->getAccountName();
+}

@@ -120,3 +120,11 @@ padding: 0px;
 .banniere img{
   cursor: none;
 }
+
+#menu-account li a span{
+  font-size: 35px;
+  color: #FFF;
+}
+#menu-account li a:hover{
+  color: #000000;
+}
