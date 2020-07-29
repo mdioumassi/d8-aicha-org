@@ -42,7 +42,7 @@
           <a class="hidden-xs" href="{{ item.url }}" style="color:#FFF; margin-top: 10px">Déconnexion</i></a>
 
         {% elseif item.title == 'Se connecter' %}
-          <a href="{{ item.url }}"><span class="glyphicon glyphicon-user"></span></a>
+          <a href="{{ item.url }}" id="icon-login"><span class="glyphicon glyphicon-user"></span></a>
         {% endif %}
 
         {#{ link(item.title, item.url, item.attributes.addClass('a-link')) }#}

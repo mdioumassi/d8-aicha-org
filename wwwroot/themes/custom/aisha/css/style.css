@@ -125,6 +125,8 @@ padding: 0px;
   font-size: 35px;
   color: #FFF;
 }
-#menu-account li a:hover{
+
+#menu-account li a span:hover{
   color: #000000;
 }
+
