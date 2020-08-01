@@ -118,7 +118,7 @@ padding: 0px;
 }
 
 .banniere img{
-  cursor: none;
+  //cursor: none;
 }
 
 #menu-account li a span{
@@ -129,4 +129,25 @@ padding: 0px;
 #menu-account li a span:hover{
   color: #000000;
 }
+.fil-actualite{
+  border:1px solid red;
+}
 
+/*Home actu*/
+.container-actu {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-actu img {vertical-align: middle;}
+
+.container-actu .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 97%;
+  padding: 20px;
+}
