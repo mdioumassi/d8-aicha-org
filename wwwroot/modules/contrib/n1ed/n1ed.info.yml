@@ -1,0 +1,16 @@
+name: N1ED
+type: module
+description: Level up add-on for CKEditor. https://n1ed.com
+package: CKEditor
+dependencies:
+  - ckeditor
+
+# version: '8.x-2.8'
+core: '8.x'
+# project: 'n1ed'
+# datestamp: 1584537622276
+
+# Information added by Drupal.org packaging script on 2020-03-20
+version: '8.x-2.8'
+project: 'n1ed'
+datestamp: 1584705392

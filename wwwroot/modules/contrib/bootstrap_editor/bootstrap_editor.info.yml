@@ -1,0 +1,17 @@
+name: BootstrapEditor
+type: module
+description: Bootstrap 4 layout editor and widgets. https://n1ed.com
+package: CKEditor
+dependencies:
+  - ckeditor
+  - n1ed
+
+# version: '8.x-2.6'
+core: '8.x'
+# project: 'bootstrap_editor'
+# datestamp: 1581099155811
+
+# Information added by Drupal.org packaging script on 2020-02-07
+version: '8.x-2.6'
+project: 'bootstrap_editor'
+datestamp: 1581101240
