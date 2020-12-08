@@ -1,0 +1,5 @@
+type: module
+name: Custom node
+description: Provides custom fuctionality for node.
+core: 8.x
+package: Custom

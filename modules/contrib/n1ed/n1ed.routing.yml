@@ -1,0 +1,15 @@
+n1ed.config:
+  path: '/admin/config/content/n1ed'
+  defaults:
+    _form: '\Drupal\n1ed\Form\N1EDConfigForm'
+    _title: 'N1ED Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+flmngr:
+  path: '/flmngr'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\FlmngrController::flmngr'
+    _title: 'Flmngr file manager'
+  requirements:
+    _access: 'TRUE'

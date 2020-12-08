@@ -1,0 +1,162 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+.container{
+  margin-right: auto;
+  width: 70%;
+}
+
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2C3E50;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.container-footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/*Search*/
+#edit-keys {
+  border: 1px solid blue;
+}
+
+/*Logo*/
+#logo-aisha{
+  margin-top: 9px;
+  border-radius: 100%;
+}
+
+/**/
+.bottom-marging{
+  margin-bottom: 26px;
+}
+.navbar-header .logo img {
+  border-radius: 50%;
+  width: 45px;
+}
+/*logo entete*/
+.logo_header{
+  width: 55%;
+  border-radius: 100%;
+  margin-left: 60px;
+  margin-top: 5%;
+}
+.aisha{
+  font-size: 25px;
+  margin-top: 62Px;
+  margin-left: 10px;
+  color: white;
+}
+
+.header-activite{
+  text-align: center;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-top: 1px solid #ecf0f1;
+  margin: 0px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main-container {
+  padding-top: 16px;
+}
+
+#top-container{
+padding: 0px;
+}
+.galerie_block{
+  border: 1px solid red;
+}
+
+/*homepage*/
+.card-home img {
+  width: 100%;
+  height: 220px;
+}
+.card-home h2{
+  font-size: 18px;
+}
+.w3-container{
+  padding: 0px !important;
+}
+/*Views actualités*/
+.actu-title{
+  height: 96px;
+}
+.actu-title h2{
+  font-size: 18px;
+}
+.date-pub-actu{
+  color: #ffffff;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+#btn-play span{
+  cursor: pointer;
+  font-size: 71px;
+  color: #fff;
+  position: relative;
+  left: 42%;
+  top: -151px;
+}
+
+.banniere img{
+  //cursor: none;
+}
+
+#menu-account li a span{
+  font-size: 35px;
+  color: #FFF;
+}
+
+#menu-account li a span:hover{
+  color: #2C3E50;
+}
+.fil-actualite{
+  border:1px solid red;
+}
+
+/*Home actu*/
+.container-actu {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-actu img {vertical-align: middle;}
+
+.container-actu .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 97%;
+  height: 85px;
+  padding: 20px;
+}
+.slick-list img{
+  width: 100%;
+  height: 210px;
+}

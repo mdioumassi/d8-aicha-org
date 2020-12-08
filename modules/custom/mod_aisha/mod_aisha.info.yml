@@ -1,0 +1,8 @@
+name: 'mod_aisha'
+type: module
+description: 'Le module pour le site aisha'
+core: 8.x
+package: 'Custom'
+
+libraries:
+  - 'mod_aisha/aisha-styling'
