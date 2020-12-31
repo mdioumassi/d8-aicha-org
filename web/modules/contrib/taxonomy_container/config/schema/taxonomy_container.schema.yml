@@ -1,6 +1,0 @@
-entity_reference_selection.taxonomy_container:
-  type: entity_reference_selection.default
-  mapping:
-    prefix:
-      type: string
-      label: Prefix
