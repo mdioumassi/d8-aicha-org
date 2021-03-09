@@ -1,0 +1,15 @@
+uuid: eed8c26d-42c3-478e-9473-5374acb178f8
+langcode: fr
+status: true
+dependencies: {  }
+name: block_partners
+label: block_partners
+effects:
+  2e670e4f-4603-429b-b9ff-eb0e95c71043:
+    uuid: 2e670e4f-4603-429b-b9ff-eb0e95c71043
+    id: image_scale
+    weight: 1
+    data:
+      width: 350
+      height: 326
+      upscale: false

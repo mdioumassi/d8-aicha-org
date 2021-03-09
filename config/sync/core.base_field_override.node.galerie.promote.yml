@@ -1,0 +1,22 @@
+uuid: 1da899fd-d052-4b39-9b38-84ff01403306
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.galerie
+id: node.galerie.promote
+field_name: promote
+entity_type: node
+bundle: galerie
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

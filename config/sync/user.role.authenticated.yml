@@ -1,0 +1,18 @@
+uuid: b73fbf4a-2b2c-4907-aef9-75386019f0b3
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'display eu cookie compliance popup'
+  - 'edit own actualites content'
+  - 'edit own article content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format full_html'

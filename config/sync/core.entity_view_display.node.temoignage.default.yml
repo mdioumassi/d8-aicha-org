@@ -1,0 +1,42 @@
+uuid: 6f611cdd-852c-4deb-8c62-97660d6330bf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.temoignage.field_lien_youtube
+    - field.field.node.temoignage.field_temoignage
+    - node.type.temoignage
+  module:
+    - user
+    - video_embed_field
+id: node.temoignage.default
+targetEntityType: node
+bundle: temoignage
+mode: default
+content:
+  field_lien_youtube:
+    weight: 103
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_temoignage:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

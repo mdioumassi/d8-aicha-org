@@ -1,0 +1,8 @@
+uuid: 00e587bf-34ad-4fa6-ab2b-feed5a18198a
+langcode: fr
+status: true
+dependencies: {  }
+id: first-footer
+label: 'First footer'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 216f718d-c548-4220-920d-8a47996acce9
+langcode: fr
+status: true
+dependencies: {  }
+id: gestion-carroussel
+label: 'Gestion contenu'
+description: ''
+locked: false

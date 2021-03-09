@@ -1,0 +1,19 @@
+uuid: 59ea52a5-9064-45e6-ad2d-888471033408
+langcode: fr
+status: true
+dependencies:
+  module:
+    - image_effects
+name: wide_x2_1024px_
+label: 'Wide x2 (1024px)'
+effects:
+  e4fe11d2-aabd-474b-ab12-734f381f21b3:
+    uuid: e4fe11d2-aabd-474b-ab12-734f381f21b3
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '2048'
+      height: ''
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice

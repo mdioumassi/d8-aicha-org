@@ -1,0 +1,21 @@
+uuid: b1cd3fea-ee70-4f2d-b26a-37dc6eeb129f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_weigth
+field_name: field_weigth
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

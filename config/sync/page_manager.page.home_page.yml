@@ -1,0 +1,12 @@
+uuid: 3d470d3a-bc17-4add-85c5-e37018ba652c
+langcode: fr
+status: true
+dependencies: {  }
+id: home_page
+label: 'home page'
+description: ''
+use_admin_theme: true
+path: /accueil
+access_logic: and
+access_conditions: {  }
+parameters: {  }

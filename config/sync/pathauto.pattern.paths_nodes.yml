@@ -1,0 +1,30 @@
+uuid: c7d46aaa-8737-47d9-a91c-29c638b4f7d7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: paths_nodes
+label: 'Paths Nodes'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  1a518566-959f-46bc-828e-82b578a56bd9:
+    id: node_type
+    bundles:
+      temoignage: temoignage
+      actualites: actualites
+      article: article
+      carousel: carousel
+      galerie: galerie
+      gallery_image: gallery_image
+      page: page
+      partenaire: partenaire
+      photos: photos
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1a518566-959f-46bc-828e-82b578a56bd9
+selection_logic: and
+weight: -5
+relationships: {  }

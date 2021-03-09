@@ -1,0 +1,19 @@
+uuid: c28df3d5-6eae-4ffb-9a62-8226eaec9eed
+langcode: fr
+status: true
+dependencies:
+  module:
+    - image_effects
+name: narrow_x2_850px_
+label: 'Narrow x2 (850px)'
+effects:
+  04ec5a9b-195d-4a6b-91af-a1233dbb3263:
+    uuid: 04ec5a9b-195d-4a6b-91af-a1233dbb3263
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '1700'
+      height: ''
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice

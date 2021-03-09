@@ -1,0 +1,8 @@
+uuid: e3bcff09-1437-4626-ab86-4db77b37e75f
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de galerie'
+vid: type_de_galerie
+description: ''
+weight: 0

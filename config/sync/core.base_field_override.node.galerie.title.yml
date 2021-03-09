@@ -1,0 +1,18 @@
+uuid: eab1b40f-5871-46c9-82e3-3f348b4242fd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.galerie
+id: node.galerie.title
+field_name: title
+entity_type: node
+bundle: galerie
+label: 'Titre galerie'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,89 @@
+uuid: c90f220d-cd74-433f-a9c0-e386a8fd18ab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e7408222-ef1c-43e3-aaca-9ef5ab2f9604:
+            uuid: e7408222-ef1c-43e3-aaca-9ef5ab2f9604
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:user:user:user_picture'
+              formatter:
+                type: image
+                settings:
+                  image_style: thumbnail
+                  image_link: content
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
+          f0325c08-e5bb-4f52-9909-054654514929:
+            uuid: f0325c08-e5bb-4f52-9909-054654514929
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:photos_album_count'
+            additional: {  }
+            weight: 1
+          ccffad5e-0378-410b-9d38-473ba78524b9:
+            uuid: ccffad5e-0378-410b-9d38-473ba78524b9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:photos_image_count'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  photos_album_count:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  photos_image_count:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  langcode: true
+  member_for: true

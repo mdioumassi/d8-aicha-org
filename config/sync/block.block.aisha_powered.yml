@@ -1,0 +1,22 @@
+uuid: 249794d8-180a-4b1a-9d37-181e870ccf5d
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - aisha
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: aisha_powered
+theme: aisha
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 9e55758b-12a6-4189-83c5-7105ef64ae86
+langcode: fr
+status: true
+dependencies: {  }
+name: aisha_950x300_
+label: Aisha(1400x300)
+effects:
+  790b5fb4-5e88-4207-a9b7-6baf3d5c00b1:
+    uuid: 790b5fb4-5e88-4207-a9b7-6baf3d5c00b1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1455
+      height: 275
+      anchor: center-center

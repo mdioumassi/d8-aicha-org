@@ -1,0 +1,20 @@
+uuid: e820c1f2-6026-4ff3-bd95-b4e72c8f9941
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - aisha
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: aisha_local_actions
+theme: aisha
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 4ef5f7d9-15a6-4706-86b4-e095535cc2ab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie
+    - node.type.galerie
+    - taxonomy.vocabulary.type_de_galerie
+id: node.galerie.field_categorie
+field_name: field_categorie
+entity_type: node
+bundle: galerie
+label: Catégorie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_de_galerie: type_de_galerie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

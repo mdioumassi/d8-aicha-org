@@ -1,0 +1,14 @@
+uuid: 1a07ac7d-6d7a-424e-bcb9-1b1f2b80ea46
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.edition
+  module:
+    - user
+id: user_add_role_action.edition
+label: 'Ajouter le rôle Edition aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: edition

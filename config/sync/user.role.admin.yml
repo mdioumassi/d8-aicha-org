@@ -1,0 +1,39 @@
+uuid: 1290b3f9-8319-4815-b46b-a5555958e2e8
+langcode: fr
+status: true
+dependencies: {  }
+id: admin
+label: Admin
+weight: 4
+is_admin: null
+permissions:
+  - 'access devel information'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'administer account settings'
+  - 'administer blocks'
+  - 'administer contact forms'
+  - 'administer content types'
+  - 'administer css assets injector'
+  - 'administer devel_generate'
+  - 'administer js assets injector'
+  - 'administer menu'
+  - 'administer module_filter'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer pages'
+  - 'administer panels layouts'
+  - 'administer panels styles'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer youtube'
+  - 'create url aliases'
+  - 'display eu cookie compliance popup'
+  - 'edit behavior plugin settings'
+  - 'switch users'
+  - 'view unpublished paragraphs'

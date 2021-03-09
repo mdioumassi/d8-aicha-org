@@ -1,0 +1,25 @@
+uuid: bab81605-b643-477f-a66b-929323ae1928
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.suivez-nous
+  module:
+    - system
+  theme:
+    - aisha
+id: suiveznous
+theme: aisha
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:suivez-nous'
+settings:
+  id: 'system_menu_block:suivez-nous'
+  label: Suivez-nous
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

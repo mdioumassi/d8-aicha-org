@@ -1,0 +1,14 @@
+uuid: 045b6e43-8c73-41f5-b798-ee2770db944a
+langcode: fr
+status: true
+dependencies: {  }
+id: menu_navigation
+label: 'menu navigation'
+code: "(function ($, Drupal) {\r\n\r\n$(\".nav li.expanded\").hover(\r\n    function(){\r\n      $(this).addClass(\"open\");\r\n    },function(){\r\n      $(this).removeClass(\"open\");\r\n    }\r\n  );\r\n\r\n}(jQuery, Drupal));"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions: {  }
+conditions_require_all: true

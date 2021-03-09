@@ -1,0 +1,25 @@
+uuid: 0b14c363-c0e7-44c1-a646-225281bd718f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: cursor_pointer
+label: 'cursor pointer'
+code: '.pointer {cursor: pointer;}'
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/temoignages"
+    negate: false
+  node_type:
+    id: node_type
+    bundles:
+      temoignage: temoignage
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+conditions_require_all: true

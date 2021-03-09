@@ -1,0 +1,17 @@
+uuid: 5bacc355-c49d-4494-ad55-73f3add4ed71
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+id: size_icon_play
+label: 'size icon play'
+code: ".icon-play{\r\n  color: #fff;\r\n  font-size: 30px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /galeries/video
+    negate: false
+conditions_require_all: true

@@ -1,0 +1,23 @@
+uuid: 4897c2ca-e1fc-4499-981a-3b1249cc8374
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.carousel
+  module:
+    - text
+id: node.carousel.body
+field_name: body
+entity_type: node
+bundle: carousel
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

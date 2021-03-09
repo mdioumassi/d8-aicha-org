@@ -1,0 +1,18 @@
+uuid: 0bec1145-4744-49a4-bdc2-87686cc2869f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.actualites
+id: node.actualites.title
+field_name: title
+entity_type: node
+bundle: actualites
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

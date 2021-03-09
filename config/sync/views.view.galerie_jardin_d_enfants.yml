@@ -1,0 +1,862 @@
+uuid: fd6a8a42-e1fb-4edf-b42b-04e0feda3e23
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - field.storage.node.field_photos
+    - field.storage.node.field_videos
+    - image.style.aisha_360x280
+    - image.style.max_650x650
+    - image.style.photo_gallery
+    - node.type.galerie
+  module:
+    - colorbox
+    - image
+    - node
+    - slick
+    - slick_views
+    - taxonomy
+    - user
+    - video_embed_field
+id: galerie_jardin_d_enfants
+label: 'galerie jardin d''enfants'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: full
+        options:
+          items_per_page: 6
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
+            first: '« Premier'
+            last: 'Dernier »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      style:
+        type: slick
+        options:
+          thumbnail: ''
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          thumbnail_effect: ''
+          thumbnail_position: ''
+          optionset: default
+          override: false
+          overridables: {  }
+          skin: ''
+          skin_arrows: ''
+          skin_dots: ''
+          cache: 0
+          current_view_mode: ''
+          fx: ''
+          style: ''
+          icon: ''
+          layout: ''
+          view_mode: ''
+          background: false
+          box_caption: ''
+          box_caption_custom: ''
+          box_media_style: ''
+          caption: {  }
+          responsive_image_style: ''
+          box_style: ''
+          image_style: ''
+          media_switch: ''
+          ratio: ''
+          thumbnail_style: ''
+          _uri: ''
+          breakpoints: {  }
+          sizes: ''
+          grid_header: ''
+          preserve_keys: false
+          visible_items: 0
+          grid: 0
+          grid_medium: 0
+          grid_small: 0
+          class: ''
+          id: ''
+          image: ''
+          link: ''
+          overlay: ''
+          title: ''
+          vanilla: false
+          grouping: {  }
+          uses_fields: false
+      row:
+        type: fields
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_photos:
+          id: field_photos
+          table: node__field_photos
+          field: field_photos
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: colorbox
+          settings:
+            colorbox_node_style: photo_gallery
+            colorbox_node_style_first: photo_gallery
+            colorbox_image_style: max_650x650
+            colorbox_gallery: page
+            colorbox_gallery_custom: ''
+            colorbox_caption: auto
+            colorbox_caption_custom: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: ul
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            galerie: galerie
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        field_categorie_target_id:
+          id: field_categorie_target_id
+          table: node__field_categorie
+          field: field_categorie_target_id
+          plugin_id: standard
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: standard
+      title: 'Notre galerie'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "\r\n<div class=\"w3-row\">\r\n  <div class=\"w3-col s6 \"><a href=\"/galeries\"><button class=\"w3-button w3-block w3-green\" style=\"width:30%\">PHOTOS</button></a></div>\r\n  <div class=\"w3-col s6\"><a href=\"/galeries/video\"><button class=\"w3-button w3-block w3-green\" style=\"width:30%\">VIDEOS</button></a></div>\r\n</div>"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships:
+        field_categorie:
+          id: field_categorie
+          table: node__field_categorie
+          field: field_categorie
+          relationship: none
+          group_type: group
+          admin_label: 'field_categorie : Taxonomy term'
+          required: true
+          plugin_id: standard
+      arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      css_class: galerie
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_photos'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: ajout_recent_gaterie
+      title: 'Derniers ajout categorie'
+      defaults:
+        title: false
+        style: false
+        row: false
+        pager: false
+        sorts: false
+        css_class: false
+        fields: false
+      style:
+        type: slick
+        options:
+          vanilla: true
+          optionset: default
+          skin: default
+          layout: ''
+          caption:
+            field_image: '0'
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_position: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
+          image: ''
+          thumbnail: ''
+          overlay: ''
+          title: ''
+          link: ''
+          class: ''
+          id: ''
+          override: true
+          overridables:
+            autoplay: autoplay
+            draggable: draggable
+            variableWidth: variableWidth
+            arrows: '0'
+            dots: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+          cache: 0
+          current_view_mode: block_1
+          thumbnail_effect: ''
+      row:
+        type: fields
+        options: {  }
+      pager:
+        type: none
+        options:
+          offset: 0
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+        field_categorie_target_id:
+          id: field_categorie_target_id
+          table: node__field_categorie
+          field: field_categorie_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: standard
+      css_class: galerie_block
+      fields:
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"w3-margin-right\">\r\n{{ field_image }}\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: slick_file
+          settings:
+            image_style: aisha_360x280
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Listes photos'
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      path: galeries
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: col-sm-3
+          row_class_default: true
+          row_class_custom: w3-margin-right
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      row:
+        type: fields
+        options: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            galerie: galerie
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"w3-row w3-margin-bottom\">\r\n  <div class=\"w3-col s2\">&nbsp;</div>\r\n  <div class=\"w3-col s4  w3-margin-right \">\r\n<a href=\"/galeries\"> <button class=\"w3-btn w3-green w3-border w3-border-green w3-round-large\" style=\"width:100%\">PHOTOS</button></a></div>\r\n  <div class=\"w3-col s4\"><a href=\"/galeries/video\"><button class=\"w3-btn w3-white w3-border w3-border-green w3-round-large\" style=\"width:100%\">VIDEOS</button></a></div>\r\n  <div class=\"w3-col s2\">&nbsp;</div>\r\n</div>"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_photos'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'listes videos'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: galeries/video
+      fields:
+        field_videos:
+          id: field_videos
+          table: node__field_videos
+          field: field_videos
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"w3-container\">\r\n  <div class=\"w3-display-container w3-hover-opacity\" style=\"width:50%\">\r\n    <div>{{ field_videos }}</div>\r\n    <div class=\"w3-display-middle w3-xlarge\">\r\n      <span class=\"glyphicon glyphicon-play-circle icon-play\" ></span>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: video_embed_field_colorbox
+          settings:
+            image_style: photo_gallery
+            link_image_to: ''
+            autoplay: true
+            responsive: true
+            width: 854
+            height: 480
+            modal_max_width: 854
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+      defaults:
+        fields: false
+        style: false
+        row: false
+        header: false
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: col-sm-4
+          default_row_class: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"w3-row w3-margin-bottom\">\r\n  <div class=\"w3-col s2\">&nbsp;</div>\r\n  <div class=\"w3-col s4 w3-margin-right\">\r\n<a href=\"/galeries\"> <button class=\"w3-btn w3-white w3-border w3-border-green w3-round-large\" style=\"width:100%\">PHOTOS</button></a></div>\r\n  <div class=\"w3-col s4\"><a href=\"/galeries/video\"><button class=\"w3-btn w3-border w3-border-green w3-round-large w3-green\" style=\"width:100%\">VIDEOS</button></a></div>\r\n  <div class=\"w3-col s2\">&nbsp;</div>\r\n</div>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_videos'

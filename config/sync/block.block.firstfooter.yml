@@ -1,0 +1,25 @@
+uuid: ee66f310-4a39-4ab4-96ab-283c2bc52064
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.first-footer
+  module:
+    - system
+  theme:
+    - aisha
+id: firstfooter
+theme: aisha
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:first-footer'
+settings:
+  id: 'system_menu_block:first-footer'
+  label: 'First footer'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 451ab912-38c4-4a44-a2b7-2d88a373d590
+langcode: fr
+status: true
+dependencies: {  }
+id: activites
+label: Activités
+description: ''
+locked: false

@@ -1,0 +1,25 @@
+uuid: 968f7ae5-4a89-41e3-89bb-a6f3e28d357a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien_youtube
+    - node.type.temoignage
+  module:
+    - video_embed_field
+id: node.temoignage.field_lien_youtube
+field_name: field_lien_youtube
+entity_type: node
+bundle: temoignage
+label: 'Lien Youtube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube_playlist: youtube_playlist
+    youtube: youtube
+    vimeo: '0'
+field_type: video_embed_field

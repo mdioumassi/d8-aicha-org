@@ -1,0 +1,38 @@
+uuid: 99912641-f3ab-495f-a507-36cd2a1df5e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo
+    - node.type.actualites
+  module:
+    - image
+id: node.actualites.field_photo
+field_name: field_photo
+entity_type: node
+bundle: actualites
+label: Photo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 616b4cc0-bd12-4ae1-90a4-c6fd3654467f
+    alt: 'Actualité APMEG'
+    title: ''
+    width: 480
+    height: 203
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

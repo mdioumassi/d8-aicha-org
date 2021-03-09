@@ -1,0 +1,14 @@
+uuid: 72c21841-ad38-4e07-992d-a2090166b90e
+langcode: fr
+status: true
+dependencies: {  }
+name: photo_galerie
+label: 'photo galerie'
+effects:
+  485ecc95-ab64-4a28-9b7d-50ba7b120b9f:
+    uuid: 485ecc95-ab64-4a28-9b7d-50ba7b120b9f
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 195

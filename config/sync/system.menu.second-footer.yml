@@ -1,0 +1,8 @@
+uuid: 859ea99b-9e93-4741-be1a-f3542ee9de24
+langcode: fr
+status: true
+dependencies: {  }
+id: second-footer
+label: AISHA
+description: ''
+locked: false

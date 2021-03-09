@@ -1,0 +1,25 @@
+uuid: 0fcab88d-a5c7-4695-92f6-bcd47233ef82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actualite_video
+    - node.type.actualites
+  module:
+    - video_embed_field
+id: node.actualites.field_actualite_video
+field_name: field_actualite_video
+entity_type: node
+bundle: actualites
+label: 'Vidéo Youtube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    youtube_playlist: '0'
+    vimeo: '0'
+field_type: video_embed_field

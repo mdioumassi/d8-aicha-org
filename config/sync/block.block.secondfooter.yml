@@ -1,0 +1,25 @@
+uuid: b441b899-c23f-45ce-ae0b-49007acd0e1d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.second-footer
+  module:
+    - system
+  theme:
+    - aisha
+id: secondfooter
+theme: aisha
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:second-footer'
+settings:
+  id: 'system_menu_block:second-footer'
+  label: AISHA
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

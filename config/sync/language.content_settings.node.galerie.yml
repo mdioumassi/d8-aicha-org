@@ -1,0 +1,11 @@
+uuid: a9a015da-1397-4ca9-a1c6-1f60b4375e16
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.galerie
+id: node.galerie
+target_entity_type_id: node
+target_bundle: galerie
+default_langcode: site_default
+language_alterable: false

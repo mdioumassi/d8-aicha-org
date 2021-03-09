@@ -1,0 +1,15 @@
+uuid: d49b50a4-7860-4403-bc5e-c6af4dd4a1f2
+langcode: fr
+status: true
+dependencies: {  }
+name: aisha_360x280
+label: Aisha_480x250
+effects:
+  c9f60164-b14a-499e-ab65-749ba59ced13:
+    uuid: c9f60164-b14a-499e-ab65-749ba59ced13
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 250
+      anchor: center-center

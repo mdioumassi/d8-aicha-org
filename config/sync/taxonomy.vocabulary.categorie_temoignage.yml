@@ -1,0 +1,8 @@
+uuid: ce4bbc2f-4ec1-4b8b-a8e0-9ecca2302f89
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie temoignage'
+vid: categorie_temoignage
+description: ''
+weight: 0

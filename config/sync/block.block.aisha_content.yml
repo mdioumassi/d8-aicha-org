@@ -1,0 +1,22 @@
+uuid: 62a1eb1d-cea3-4e3e-ab4c-086e05982bff
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aisha
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: aisha_content
+theme: aisha
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

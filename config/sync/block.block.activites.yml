@@ -1,0 +1,25 @@
+uuid: 7a7cbc87-d0ee-4aec-ad3e-ab238ff8e229
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.activites
+  module:
+    - system
+  theme:
+    - aisha
+id: activites
+theme: aisha
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:activites'
+settings:
+  id: 'system_menu_block:activites'
+  label: Activités
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

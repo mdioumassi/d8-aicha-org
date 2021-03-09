@@ -1,0 +1,25 @@
+uuid: 10fe92d9-8958-459b-8cfa-667760aac6cf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aisha
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: aisha_branding
+theme: aisha
+region: navigation
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

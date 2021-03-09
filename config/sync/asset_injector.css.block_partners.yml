@@ -1,0 +1,17 @@
+uuid: 70879974-50aa-47eb-a05a-5ce3903886d7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+id: block_partners
+label: block_partners
+code: "#partners img{\r\n  height: 221px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+conditions_require_all: true

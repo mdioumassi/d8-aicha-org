@@ -1,0 +1,14 @@
+uuid: c55f2910-c94a-4776-a46e-a094f6866343
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.edition
+  module:
+    - user
+id: user_remove_role_action.edition
+label: 'Enlever le rôle Edition des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: edition

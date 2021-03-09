@@ -1,0 +1,48 @@
+uuid: a8706c85-1cc3-4d89-9dc0-a9846f929610
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.mobile_x1_560px
+    - image.style.mobile_x2_560px_
+    - image.style.narrow_x1_850px_
+    - image.style.narrow_x2_850px_
+    - image.style.wide_x1_1024px_
+    - image.style.wide_x2_1024px_
+  theme:
+    - aisha
+id: activite_images_styles
+label: 'Activite images styles'
+image_style_mappings:
+  -
+    breakpoint_id: aisha.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wide_x1_1024px_
+  -
+    breakpoint_id: aisha.wide
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wide_x2_1024px_
+  -
+    breakpoint_id: aisha.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: narrow_x1_850px_
+  -
+    breakpoint_id: aisha.narrow
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: narrow_x2_850px_
+  -
+    breakpoint_id: aisha.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: mobile_x1_560px
+  -
+    breakpoint_id: aisha.mobile
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: mobile_x2_560px_
+breakpoint_group: aisha
+fallback_image_style: mobile_x1_560px

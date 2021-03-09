@@ -1,0 +1,11 @@
+uuid: cbd973c1-3617-4d9c-8589-910373d9ef2c
+langcode: fr
+status: false
+dependencies: {  }
+id: container
+label: Container
+code: ".container{\r\n  width: none !important;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

@@ -1,0 +1,14 @@
+uuid: fa9b7e9f-84b0-48e2-8ab8-51fddfabba55
+langcode: fr
+status: true
+dependencies: {  }
+name: actualite1000x400
+label: Actualite1000x400
+effects:
+  d51fc436-f87a-4f98-baf1-1031d15cb43d:
+    uuid: d51fc436-f87a-4f98-baf1-1031d15cb43d
+    id: image_resize
+    weight: 1
+    data:
+      width: 900
+      height: 300

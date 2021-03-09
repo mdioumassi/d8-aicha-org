@@ -1,0 +1,27 @@
+uuid: e9f362d6-9d2e-4513-80ff-b181b86a0811
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galerie.field_categorie
+    - field.field.node.galerie.field_photos
+    - field.field.node.galerie.field_videos
+    - node.type.galerie
+  module:
+    - user
+id: node.galerie.teaser
+targetEntityType: node
+bundle: galerie
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_categorie: true
+  field_photos: true
+  field_videos: true
+  langcode: true

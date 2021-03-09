@@ -1,0 +1,24 @@
+uuid: 23cdce4f-5e2a-46f8-badf-c56a36eb9bef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.carousel
+  module:
+    - views
+  theme:
+    - aisha
+id: views_block__carousel_block_1
+theme: aisha
+region: banniere
+weight: 0
+provider: null
+plugin: 'views_block:carousel-block_1'
+settings:
+  id: 'views_block:carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

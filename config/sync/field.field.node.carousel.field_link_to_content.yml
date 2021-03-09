@@ -1,0 +1,19 @@
+uuid: b6b8eabd-7c96-424c-a052-5f974e65436f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to_content
+    - node.type.carousel
+id: node.carousel.field_link_to_content
+field_name: field_link_to_content
+entity_type: node
+bundle: carousel
+label: 'Link to content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

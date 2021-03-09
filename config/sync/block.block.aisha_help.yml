@@ -1,0 +1,22 @@
+uuid: 1f7ab1b5-7bf0-47cc-be28-6adac692a48e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - aisha
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: aisha_help
+theme: aisha
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

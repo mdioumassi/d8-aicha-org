@@ -1,0 +1,19 @@
+uuid: 305b6a0f-cecf-4c09-8174-5cfb752aef29
+langcode: fr
+status: true
+dependencies:
+  module:
+    - image_effects
+name: mobile_x2_560px_
+label: 'Mobile x2 (560px)'
+effects:
+  2da95a87-d30d-476a-a164-6fb170a74883:
+    uuid: 2da95a87-d30d-476a-a164-6fb170a74883
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '1120'
+      height: ''
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice

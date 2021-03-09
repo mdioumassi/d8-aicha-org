@@ -1,0 +1,14 @@
+uuid: 233b8c9f-7462-46fc-84e0-7948489d5450
+langcode: fr
+status: true
+dependencies: {  }
+name: photo_gallery
+label: photo-gallery
+effects:
+  b94959b1-30b9-4a62-b8c5-625601cfa8a8:
+    uuid: b94959b1-30b9-4a62-b8c5-625601cfa8a8
+    id: image_resize
+    weight: 1
+    data:
+      width: 400
+      height: 400

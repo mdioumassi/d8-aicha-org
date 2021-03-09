@@ -1,0 +1,11 @@
+uuid: 8851b56e-cd39-4820-be0b-b2f04ac68753
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_temoignage
+id: taxonomy_term.categorie_temoignage
+target_entity_type_id: taxonomy_term
+target_bundle: categorie_temoignage
+default_langcode: site_default
+language_alterable: false
